@@ -45,3 +45,4 @@ console.log("Adding apples (expect true)", addItem("apples"));
 console.log(`Basket is now ${basket}`);
 
 console.log();
+console.log(basket);
