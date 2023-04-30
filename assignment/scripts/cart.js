@@ -14,8 +14,8 @@ function addItem(input) {
 }
 
 function listItems() {
-  for (let i = 0; i < Array.length; i++) {
-    console.log(array[i]); //??
+  for (let i = 0; i < basket.length; i++) {
+    console.log(basket[i]); //??
   }
 }
 function empty() {
@@ -29,15 +29,17 @@ function isFull() {
     return true;
   }
 }
-
+function removeItem(item){
+  console.log(removeItem.indexOf('mango'));
+}
 //test//
-addItem("mango1");
-addItem("mango2");
-addItem("mango3");
-addItem("mango4");
-addItem("mango5");
-addItem("mango6");
-addItem("mango7");
+addItem("peach");
+addItem("mango");
+addItem("pineapple");
+addItem("banana");
+addItem("melon");
+addItem("watermelon");
+addItem("mango");
 console.log(`Basket is ${basket}`);
 console.log("Adding apples (expect true)", addItem("apples"));
 console.log(`Basket is now ${basket}`);
